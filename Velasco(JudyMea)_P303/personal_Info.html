@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:lightgray;">
+<meta charset="UTF-8">
+
+<style>
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: lightgray;
+}
+
+input[type=submit] {
+  width: 80%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font: italic;
+}
+
+button {
+  background-color: sienna;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+button:hover {
+ transform: scale(1.1);
+ opacity: 0.7;
+}
+
+.submt {
+  width: 30%;
+  padding: 10px 12px;
+  background-color: #0000ff;
+  text-align: center;
+  margin: 8px 0;
+  border: none;
+}
+
+.container {
+  padding: 16px;
+  text-align: left;
+  width: 50%;
+}
+
+</style>
+<body>
+
+<h3>Personal Information</h3>
+
+<div class="container" style="margin: 0 auto;">
+  <form action="/action_page.php">
+    <label for="fullname">Full Name (Lastname, Firstname, Middlename)</label>
+    <input type="text" id="fullname" name="Fullname" placeholder="Your full name..">
+
+    <label for="address">Address</label>
+    <input type="text" id="address" name="Address" placeholder="Your address..">
+
+    <label for="contct">Contact Number</label>
+    <input type="text" id="contct" name="contact" placeholder="Your contact number..">
+
+    <label for="temp">Body Temperature</label>
+    <input type="text" id="temp" name="bodytemperature" placeholder="Your body temperature..">
+
+  
+   <button type="button" class="submt">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
+
+
